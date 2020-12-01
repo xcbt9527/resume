@@ -41,6 +41,7 @@ jobs:
         run: |
           gulp clean
           gulp build
+          cd ./dist && echo "resume.itmomo.top" >CNAME
         #   hexo deploy
       - name: Deploy gulp resume
         env:
